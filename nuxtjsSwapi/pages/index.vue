@@ -1,73 +1,46 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        nuxtjsSwapi
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+    <div class="header">
+      <h1>Star Wars</h1>      
     </div>
-  </div>
+    <div class="boxCard">
+      <b-card  bg-variant="dark" text-variant="warning" title="Pessoas">
+       <b-card-text>
+          With supporting text below as a natural lead-in to additional content.
+        </b-card-text>
+        <b-button to="/pessoas" href="#" variant="outline-warning">Conhecer</b-button>
+      </b-card>
+    </div>
+    <div class="boxCard">
+      <b-card bg-variant="dark" text-variant="warning" title="Planetas">
+       <b-card-text>
+          With supporting text below as a natural lead-in to additional content.
+        </b-card-text>
+        <b-button to="/planetas" href="#" variant="outline-warning">Conhecer</b-button>
+      </b-card>
+    </div>
+    <div class="boxCard">
+      <b-card bg-variant="dark" text-variant="warning" title="Filmes">
+       <b-card-text>
+          With supporting text below as a natural lead-in to additional content.
+        </b-card-text>
+        <b-button to="/filmes" href="#" variant="outline-warning">Conhecer</b-button>
+      </b-card>
+    </div>
+    <div class="footer">
+      <h5>Todos os direitos</h5>
+    </div>
+  </div>   
 </template>
 
 <script>
-export default {}
+import axios from "../plugins/swapi"
+
+export default {
+}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
