@@ -1,0 +1,48 @@
+@import "../componentes/colors";
+@import "../componentes/fontes";
+
+.container {
+    
+    padding: 0;   
+    text-align: center;
+    display: inline;
+    align-content: center;
+} 
+  
+    
+    
+  
+  
+    .header {
+        background: $primary;
+        color: $secundary;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top:5px ;
+        font-family: $fontFamilyBody;
+  
+        h1 {
+          padding: 10px;
+        }
+    }
+  
+     .boxCard {
+       
+      margin: 5px;
+      
+
+       
+  
+     }
+
+     .footer {
+      background: $primary;
+      color: $secundary;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-family: $fontFamilyBody;
+
+     }
+ 
+  
+
